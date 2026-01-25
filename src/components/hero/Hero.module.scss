@@ -1,0 +1,62 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #7c6363;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .textSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+
+    .title {
+      font-family: "Playfair Display", serif; // セリフ体
+      font-size: clamp(3rem, 10vw, 5rem);
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+
+    .subText {
+      color: #fff;
+      letter-spacing: 0.3em;
+      font-size: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .viewButton {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 12px 35px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background: #fff;
+        color: #7c6363;
+      }
+    }
+  }
+
+  .imageSide {
+    flex: 1;
+    position: relative;
+    min-height: 400px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}

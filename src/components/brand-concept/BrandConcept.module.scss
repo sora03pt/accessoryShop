@@ -1,0 +1,46 @@
+.concept {
+  padding: 100px 20px;
+  background-color: #fff;
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .textContent {
+    flex: 1;
+
+    .title {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      color: #7c6363;
+      line-height: 1.1;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      letter-spacing: 0.05em;
+    }
+
+    .description {
+      color: #7c6363;
+      font-size: 0.875rem;
+      line-height: 2;
+      max-width: 400px;
+    }
+  }
+
+  .imageContent {
+    flex: 1;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

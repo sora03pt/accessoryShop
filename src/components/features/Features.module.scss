@@ -1,0 +1,42 @@
+.features {
+  padding: 80px 20px;
+  background-color: #fff;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .featureItem {
+    background-color: #7c6363;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#7c6363, 5%);
+    }
+
+    .icon {
+      font-size: 1.2rem;
+    }
+
+    .label {
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+  }
+}
