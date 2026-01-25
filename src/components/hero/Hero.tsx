@@ -18,8 +18,9 @@ export const Hero = () => {
         </button>
       </div>
       <div className={styles.imageSide}>
-        <Image src="/image/main.webp" alt="Jewelry Collection" fill className="object-cover" priority />
+        <Image src="/accessoryShop/image/main.webp" alt="Jewelry Collection" width={1600}
+          height={1067} />
       </div>
-    </section>
+    </section >
   );
 };

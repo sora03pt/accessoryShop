@@ -1,4 +1,5 @@
 import styles from './BrandConcept.module.scss';
+import Image from 'next/image';
 
 export const BrandConcept = () => {
   return (
@@ -13,7 +14,9 @@ export const BrandConcept = () => {
           </p>
         </div>
         <div className={styles.imageContent}>
-          <img src="/image/concept.webp" alt="Concept" />
+          <Image src="/accessoryShop/image/concept.webp" alt="Concept"
+            width={520}
+            height={345} />
         </div>
       </div>
     </section>

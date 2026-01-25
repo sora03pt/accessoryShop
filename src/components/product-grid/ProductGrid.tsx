@@ -1,4 +1,5 @@
 import styles from './ProductGrid.module.scss';
+import Image from 'next/image';
 
 const products = Array(6).fill({
   name: 'ITEM NAME',
@@ -16,7 +17,8 @@ export const ProductGrid = () => {
           {products.map((item, index) => (
             <div key={index} className={styles.item}>
               <div className={styles.imageWrapper}>
-                <img src="/image/item.webp" alt={item.name} />
+                <Image src="/accessoryShop/image/item.webp" alt={item.name} width={373}
+                  height={373} />
               </div>
               <p className={styles.category}>ITEM</p>
               <p className={styles.name}>{item.name}</p>

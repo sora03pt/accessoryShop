@@ -14,11 +14,11 @@ export default function LandingPage() {
         <meta name="keywords" content="ジュエリー,アクセサリー,送料無料,金属アレルギー対応,高品質" />
         <meta property="og:title" content="Jewelry Collection | 高品質なアクセサリーコレクション" />
         <meta property="og:description" content="上質なジュエリーとアクセサリーを揃えたコレクション。送料無料、金属アレルギー対応、海外発送対応です。" />
-        <meta property="og:image" content="/image/main.webp" />
+        <meta property="og:image" content="/accessoryShop/image/main.webp" />
         <meta property="og:url" content="https://sora03pt.github.io/accessoryShop/" />
         <meta name="twitter:title" content="Jewelry Collection | 高品質なアクセサリーコレクション" />
         <meta name="twitter:description" content="上質なジュエリーとアクセサリーを揃えたコレクション。" />
-        <meta name="twitter:image" content="/image/main.webp" />
+        <meta name="twitter:image" content="/accessoryShop/image/main.webp" />
       </Head>
       <main>
         <Hero />
