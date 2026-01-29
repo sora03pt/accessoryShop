@@ -24,11 +24,6 @@
     gap: 12px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-    cursor: pointer;
-
-    &:hover {
-      background-color: darken(#7c6363, 5%);
-    }
 
     .icon {
       font-size: 1.2rem;
